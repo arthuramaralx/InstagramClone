@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<!-- META -->
 	<meta charset="UTF-8">
@@ -9,158 +10,189 @@
 	<title>KenzieGram</title>
 
 	<!-- CSS -->
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css" />
 
 	<!-- FAVICON -->
 	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
 </head>
+
 <body>
 	<!-- CABEÇALHO -->
-	<header>
-		<a href="#" class="instagram-logo">
-			<figure>
-				<img src="./img/logo.png" alt="Instagram logo">
-			</figure>
-		</a>
-	</header>
+	<div class="content">
+		<header>
+			<div class="flex-header">
+				<a href="#" class="instagram-logo">
+					<figure>
+						<img src="./img/logo.png" alt="Instagram logo">
+					</figure>
+				</a>
+				<div class="flex-header-space"></div>
+				<img src="img/icons-search.svg" alt="" class="search_logo">
+				<label for="pesquisar">
+					<input type="text" placeholder="Pesquisar por" name="pesquisar">
+				</label>
+				<button class="login">Login</button>
+				<button class="sing_in">Sing in</button>
+			</div>
+		</header>
+		<!-- CONTEÚDO DA PÁGINA -->
+		<main>
 
-	<!-- CONTEÚDO DA PÁGINA -->
-	<main>
+			<!-- CONTEÚDO SOBRE O USUÁRIO -->
+			<article class="profile-content">
+				<div class="container-foto-titulo">
+					<!-- FOTO DE PERFIL DO USUÁRIO -->
+					<section class="profile-photo">
+						<figure>
+							<img src="./img/profile-photo.png" alt="Profile photo" class="profile_pic">
+						</figure>
+					</section>
 
-		<!-- CONTEÚDO SOBRE O USUÁRIO -->
-		<article class="profile-content">
+					<!-- DETALHES/INFORMAÇÕES DO USUÁRIO -->
 
-			<!-- FOTO DE PERFIL DO USUÁRIO -->
-			<section class="profile-photo">
-				<figure>
-					<img src="./img/profile-photo.png" alt="Profile photo">
-				</figure>
-			</section>
-
-			<!-- DETALHES/INFORMAÇÕES DO USUÁRIO -->
-			<section class="profile-info">
-				<div class="profile-follow">
-					<h1>kenzieacademybr</h1>
-					<button>Follow</button>
+					<section class="profile-info">
+						<div class="profile-follow flex-profile">
+							<h1>kenzieacademybr</h1>
+							<button class="profile-follow">Follow</button>
+						</div>
 				</div>
 				<!-- POSTS/SEGUIDORES/SEGUINDO -->
-				<div class="profile-data">
-					<p><span>759</span>publicações</p>
-					<p><span>38,4mil</span>Seguidores</p>
-					<p><span>281</span>Seguindo</p>
+				<div class="profile-status-flex">
+					<!-- <div class="profile-status-space"></div> -->
+					<div class="profile-status">
+					</div>
+					<div class="profile-status-column">
+					<div class="profile-data-desktop">
+						<p><span>759</span>publicações</p>
+						<p><span>38,4mil</span>Seguidores</p>
+						<p><span>281</span>Seguindo</p>
+					</div>
+					
+					<h2> Kenzie Academy Brasil </h2>
+					<ul>
+						<li>
+							<p>Vire um programador em 12 meses: Aprenda agora. Pague depois</p>
+						</li>
+						<li>
+							<p>98% dos alunos contratados em menos de 1 mês após a formatura</p>
+						</li>
+						<li>Link</li>
+						<li>
+							<a href="https://linktr.ee/kenzieacademybr" class="link">linktr.ee/kenzieacademybr</a>
+						</li>
+					</ul>
 				</div>
+				</div>
+	</div>
+	</section>
+	</article>
+	</div>
+	<!-- DESTAQUES DO USUÁRIO -->
+	<article class="highlighted-stories">
+		<ul>
+			<li class="add-new-highlight">
+				<figure>
+					<img src="./img/store1.png" alt="A Kenzie">
+					<figcaption>A Kenzie</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="./img/store2.png" alt="Depoimentos">
+					<figcaption>Depoimentos</figcaption>
+				</figure>
+			</li>
+			<li>
+				<figure>
+					<img src="./img/store3.png" alt="Parceiras">
+					<figcaption>Parceiras</figcaption>
+				</figure>
+			</li>
+		</ul>
+	</article>
 
-				<h2> Kenzie Academy Brasil </h2>
-				<ul>
-					<li>
-						<p>Vire um programador em 12 meses: Aprenda agora. Pague depois</p>
-					</li>
-					<li>
-						<p>98% dos alunos contratados em menos de 1 mês após a formatura</p>
-					</li>
-					<li>Link</li>
-					<li>
-						<a href="https://linktr.ee/kenzieacademybr">linktr.ee/kenzieacademybr</a>
-					</li>
-				</ul>
-			</section>
-		</article>
+	<!-- POSTS DO USUÁRIO -->
+	<article class="profile-posts">
 
-		<!-- DESTAQUES DO USUÁRIO -->
-		<article class="highlighted-stories">
+		<!-- MENU DE POSTS -->
+		<div class="profile-data-mobile">
+			<div class="profile-data-flex">
+				<p><span>759</span>publicações</p>
+				<p><span>38,4mil</span>Seguidores</p>
+				<p><span>281</span>Seguindo</p>
+			</div>
+		</div>
+
+		<nav>
 			<ul>
-				<li class="add-new-highlight">
-					<figure>
-						<img src="./img/store1.png" alt="A Kenzie">
-						<figcaption>A Kenzie</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./img/store2.png" alt="Depoimentos">
-						<figcaption>Depoimentos</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<img src="./img/store3.png" alt="Parceiras">
-						<figcaption>Parceiras</figcaption>
-					</figure>
-				</li>
+				<li><img src="./img/pubIcon.png" /><a href="#">PUBLICAÇÕES</a></li>
+				<li><img src="./img/reelsIcon.png" /><a href="#">REELS</a></li>
+				<li><img src="./img/playIcon.png" /><a href="#">VÍDEOS</a></li>
 			</ul>
-		</article>
+		</nav>
 
-		<!-- POSTS DO USUÁRIO -->
-		<article class="profile-posts">
+		<!-- LISTA DE POSTS -->
+		<ul class="flex-posts">
 
-			<!-- MENU DE POSTS -->
-			<nav>
-				<ul>
-					<li><img src="./img/pubIcon.png"/><a href="#">PUBLICAÇÕES</a></li>
-					<li><img src="./img/reelsIcon.png"/><a href="#">REELS</a></li>
-					<li><img src="./img/playIcon.png"/><a href="#">VÍDEOS</a></li>
-				</ul>
-			</nav>
+			<!-- POST -->
+			<li>
+				<a href="#">
+					<figure>
+						<img src="img/post1.png" alt="Post">
+					</figure>
+				</a>
+			</li>
 
-			<!-- LISTA DE POSTS -->
-			<ul>
+			<!-- POST -->
+			<li>
+				<a href="#">
+					<figure>
+						<img src="img/post2.png" alt="Post">
+					</figure>
+				</a>
+			</li>
 
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post1.png" alt="Post">
-						</figure>
-					</a>
-				</li>
+			<!-- POST -->
+			<li>
+				<a href="#">
+					<figure>
+						<img src="img/post3.png" alt="Post">
+					</figure>
+				</a>
+			</li>
 
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post2.png" alt="Post">
-						</figure>
-					</a>
-				</li>
-				
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post3.png" alt="Post">
-						</figure>
-					</a>
-				</li>
-				
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post4.png" alt="Post">
-						</figure>
-					</a>
-				</li>
-				
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post5.png" alt="Post">
-						</figure>
-					</a>
-				</li>
-				
-				<!-- POST -->
-				<li>
-					<a href="#">
-						<figure>
-							<img src="img/post6.png" alt="Post">
-						</figure>
-					</a>
-				</li>
-			</ul>
-		</article>
+			<!-- POST -->
+			<li>
+				<a href="#">
+					<figure>
+						<img src="img/post4.png" alt="Post">
+					</figure>
+				</a>
+			</li>
+
+			<!-- POST -->
+			<li>
+				<a href="#">
+					<figure>
+						<img src="img/post5.png" alt="Post">
+					</figure>
+				</a>
+			</li>
+
+			<!-- POST -->
+			<li>
+				<a href="#">
+					<figure>
+						<img src="img/post6.png" alt="Post">
+					</figure>
+				</a>
+			</li>
+		</ul>
+	</article>
 	</main>
+
 </body>
+
 </html>
