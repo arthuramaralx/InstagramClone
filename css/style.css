@@ -139,6 +139,8 @@ h2 {
 	width        : 20vw;
 	max-width    : 150px;
 	border-radius: 100%;
+	border: 2px solid #232323;
+	padding: 2px;
 
 }
 
@@ -160,7 +162,11 @@ h2 {
 
 .highlighted-stories ul img {
 	width: inherit;
+	border: 2px solid #232323;
+	border-radius: 100%;
+	padding: 2px;
 }
+
 
 figcaption {
 	font-size: 0.6rem;
@@ -225,7 +231,7 @@ nav ul a {
 .flex-posts img {
 	width    : 100%;
 	max-width: 285px;
-	height   : 285;
+	height   : %;
 
 }
 
@@ -293,7 +299,7 @@ nav ul a {
 		margin-left: -80px;
 		margin-right: -20px;
 		padding: 4px;
-		border: 1.5px solid #232323;
+		border: 2px solid #232323;
 	}
 
 	.profile-data-mobile {
@@ -303,12 +309,18 @@ nav ul a {
 	.highlighted-stories {
 		margin-bottom: 60px;
 		text-align   : right;
+		
+	}
+	.highlighted-stories img {
+		border: 2px solid #232323;
+		border-radius: 100%;
+		padding: 2px;
 	}
 
 	figcaption {
 		font-size  : 1rem;
 		text-align : right;
-		margin-left: -25px;
+		margin-left: px;
 		width      : 80px;
 	}
 
@@ -400,4 +412,17 @@ nav ul a {
 	.profile-follow {
 		margin-right: 0;
 	}
+
+.flex-posts img {
+
+	width: 285px;
+
+}
+.flex-posts {
+	justify-content: space-between;
+}
+figcaption {
+	margin-left:-4px;
+	margin-top: 10px;
+}
 }
